@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'SNAlipaySDK'
-  s.version      = '2.4'
+  s.version      = '2.4.1'
   s.summary      = 'Alipay SDK 2.4 for iOS.'
   s.license = {
     :type => "Copyright",
