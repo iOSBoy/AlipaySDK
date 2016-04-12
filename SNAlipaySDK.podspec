@@ -12,10 +12,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/iOSBoy/SNAlipaySDK.git", :tag => s.version.to_s}
   s.frameworks = 'CoreTelephony', 'SystemConfiguration'
   s.requires_arc = true
-  s.default_subspec   = 'Core'
-  s.subspec "Core" do |core|
-    core.resources    = 'SDK2.4/AlipaySDK.bundle'
-    core.vendored_frameworks = 'SDK2.4/AlipaySDK.framework'
-    core.public_header_files = 'SDK2.4/AlipaySDK.framework/Headers/**/*.h'
-  end
+  s.resources    = 'SDK2.4/AlipaySDK.bundle'
+  s.frameworks = 'SystemConfiguration','CoreTelephony','QuartzCore','CoreText','CoreGraphics','UIKit','Foundation','CFNetwork','CoreMotion'
+  s.libraries = 'z','c++'
+  s.vendored_frameworks = 'SDK2.4/AlipaySDK.framework'
 end
