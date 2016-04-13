@@ -7,10 +7,9 @@ Pod::Spec.new do |s|
     :text => "支付宝(中国)网络技术有限公司 版权所有."
   }
   s.homepage     = 'https://doc.open.alipay.com/doc2/detail?treeId=59&articleId=103660&docType=1'
-  s.authors      = { 'Alipay' => 'https://www.alipay.com/' }
-  s.platform     = :ios, "5.0"
-  s.source       = { :git => "https://github.com/iOSBoy/SNAlipaySDK.git", :tag => s.version.to_s}
-  s.frameworks = 'CoreTelephony', 'SystemConfiguration'
+  s.author      = { 'Alipay' => 'https://www.alipay.com/' }
+  s.source       = { :git => "https://github.com/iOSBoy/SNAlipaySDK.git", :tag => s.version}
+  s.platform     = :ios
   s.requires_arc = true
   s.resources    = 'SDK2.4/AlipaySDK.bundle'
   s.frameworks = 'SystemConfiguration','CoreTelephony','QuartzCore','CoreText','CoreGraphics','UIKit','Foundation','CFNetwork','CoreMotion'
