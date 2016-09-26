@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'SNAlipaySDK'
-  s.version      = '2.4.2'
-  s.summary      = 'Alipay SDK 2.4 for iOS.'
+  s.version      = '15.2.2'
+  s.summary      = 'Alipay SDK 15.2.2 for iOS.'
   s.license = {
     :type => "Copyright",
     :text => "支付宝(中国)网络技术有限公司 版权所有."
@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/iOSBoy/SNAlipaySDK.git", :tag => s.version}
   s.platform     = :ios, "6.0"
   s.requires_arc = true
-  s.resources    = 'SDK2.4/AlipaySDK.bundle'
+  s.resources    = 'SDK/AlipaySDK.bundle'
   s.frameworks = 'SystemConfiguration','CoreTelephony','QuartzCore','CoreText','CoreGraphics','UIKit','Foundation','CFNetwork','CoreMotion'
   s.libraries = 'z','c++'
-  s.vendored_frameworks = 'SDK2.4/AlipaySDK.framework'
+  s.vendored_frameworks = 'SDK/AlipaySDK.framework'
 end
